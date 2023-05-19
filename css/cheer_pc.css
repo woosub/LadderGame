@@ -1,0 +1,19 @@
+#unity-canvas {width:960px; height:600px; background: #231F20}
+
+body {text-align: center; padding: 0; border: 0; margin: 0;}
+div {width:  100%}
+div img {width:  100%}
+div.mimg {position: relative}
+div.btn {position:absolute; width: 16.3%; height: 5.5%; cursor:pointer}
+div.btn2 {position:absolute; width: 13.4%; height: 5.5%; bottom: 9%; cursor:pointer} 
+
+div#btn1 {left: 8%; bottom: 24.7%;}
+div#btn2 {right: 18.7%; bottom: 24.5%;}
+div#btn3 {left: 8%; bottom: 24.6%;}
+div#btn4 {right: 18.6%; bottom: 24.5%;}
+div#btn5 {left: 8%; bottom: 24.6%;}
+div#btn6 {left: 5.7%;}
+div#btn7 {left: 24.5%;}
+div#btn8 {left: 43.3%;}
+div#btn9 {left: 62.1%;}
+div#btn10 {left: 80.8%;}

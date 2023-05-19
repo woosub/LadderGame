@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>경기도 청년프로젝트 캠페인</title>
+    <link rel="stylesheet" type="text/css" href="/css/cheer_mb.css" >    
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/cheer_mb_test.js"></script>   
+  </head>
+
+  <body>
+
+    <canvas id="unity-canvas" width=1080 height=1920 style="width: 1080px; height: 1920px; background: #808080"></canvas>
+    <script src="m.ladder/Build/Ladder_game_mb.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        //canvas.style.position = "fixed";
+
+        document.body.style.textAlign = "left";
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "m.ladder/Build/Ladder_game_mb.data",
+        frameworkUrl: "m.ladder/Build/Ladder_game_mb.framework.js",
+        codeUrl: "m.ladder/Build/Ladder_game_mb.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "LadderGame",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+
+    <div id="event1" class="mimg"><img src="/images/mb_1.jpg" alt="경기청년 갭이어 프로그램"><div id="btn1" class="btn"></div></div>
+    <div id="event5" class="mimg"><img src="/images/mb_5.jpg" alt="경기청년 역량강화 기회 지원"><div id="btn5" class="btn"></div></div>
+    <div id="event4" class="mimg"><img src="/images/mb_4.jpg" alt="경기청년 면접수당"><div id="btn4" class="btn"></div></div>
+    <div id="event3" class="mimg"><img src="/images/mb_3.jpg" alt="경기청년 사다리 프로그램"><div id="btn3" class="btn"></div></div>
+    <div id="event2" class="mimg"><img src="/images/mb_2.jpg" alt="경기도 청년 복지포인트"><div id="btn2" class="btn"></div></div>    
+    <div id="event6" class="mimg"><img src="/images/mb_all.jpg" alt="너 하고 싶은거 다해"><div id="btn6" class="btn2"></div><div id="btn7" class="btn2"></div><div id="btn8" class="btn2"></div><div id="btn9" class="btn2"></div><div id="btn10" class="btn2"></div></div>        
+  </body>
+  
+</html>
